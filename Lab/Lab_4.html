@@ -3,25 +3,30 @@
 
 <head>
 <style>
-        caption{
-                color: crimson;font-size: 40px;text-align: center;
-                }
-        tr{
-                background-color: sandybrown;text-align: center;
-        }
-        td{
-                color:blue;background-color: sandybrown;text-align: center;
-        }
+.like-table{
+    display:table-cell;
+}
+td,
+.like-table{
+    width:200px;
+    height:100px;
+    border:1px solid rgb(105, 38, 38);
+    text-align: center;
+    font-family: DFKai-sb;
+    font-size: larger;
+}
+
+
 </style>
         <meta charset="UTF-8"> <title>Title of the document</title>
 </head>
 
 <body>
-        <table border='1' style="width: 100vw;">
-                <caption>課表</caption>
+        <table border='2', align="center">
+                <caption style="font-size: 50px;color: crimson;">課表</caption>
                 <thead>
                         <tr>
-                                <th> </th>
+                                <th class=>時間</th>
                                 <th>星期一</th>
                                 <th>星期二</th>
                                 <th>星期三</th>
@@ -38,7 +43,7 @@
                         <td>Web基礎程式設計</td>
                 </tbody>
                 <tbody>
-                        <td>9:10</th>
+                        <td>10:10</th>
                         <td>Python基礎程式設計</td>
                         <td>Web基礎程式設計</td>
                         <td>軟體工程專題</td>
@@ -55,7 +60,7 @@
                 </tbody>
                 <tbody>
                         <td>12:10</td>
-                        <td colspan='5'>午休</td>
+                        <td colspan='5' style="font-size: 75px;">午休</td>
                 </tbody>
                 <tbody>
                         <td>13:10</th>
@@ -83,7 +88,7 @@
                 </tbody>
                 <tbody>
                         <td>16:10</td>
-                        <td colspan="5">準備溜了</td>
+                        <td colspan="5" style="font-size: 75px;">準備溜了</td>
                 </tbody>
         </table>
 </body>
